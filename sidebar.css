@@ -76,7 +76,8 @@ body {
 }
 
 #bar-1-profile-div,
-#bar-2-profile-div {
+#bar-2-profile-div,
+#bar-3-profile-div {
   display: flex;
   align-items: center;
   padding-top: 15px;
@@ -91,7 +92,8 @@ body {
 }
 
 #bar-1-profile-div span,
-#bar-2-profile-div span {
+#bar-2-profile-div span,
+#bar-3-profile-div span {
   padding: 15px;
   border-radius: 50%;
   margin-right: 5px;
@@ -102,7 +104,8 @@ body {
 }
 
 #bar-1-profile-div iconify-icon,
-#bar-2-profile-div iconify-icon {
+#bar-2-profile-div iconify-icon,
+#bar-3-profile-div iconify-icon {
   cursor: pointer;
 }
 
@@ -190,4 +193,46 @@ body {
 #bar-3-menu-div-1 {
   color: #f8f9fa;
   background-color: #0d6efd;
+}
+
+#bar-3-profile-div {
+  border-top: rgba(24, 23, 23, 0.3) solid 1px;
+}
+
+/* This tooltip and tooltip-text is for adding floating information beside an element when one hovers. it involves creating tooltip class in the parent container, and also creating a span within the container giving it a tooltip-text class also in the html, then styling it as below. the parent container having position relative, and the span having position absolute, both visibility hidden, but visible when it is hovered upon. */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  position: absolute;
+  top: -2px;
+  left: 100%;
+  font-size: 12px;
+  visibility: hidden;
+  width: 70px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+/* Below is to add pointing arrow to the left of the tooltip */
+.tooltip .tooltip-text::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
 }
