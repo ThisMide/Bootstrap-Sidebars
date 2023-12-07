@@ -16,7 +16,8 @@ body {
 }
 
 #bar-1,
-#bar-2 {
+#bar-2,
+#bar-3 {
   background-color: #212529;
   height: 100svh;
   padding: 15px 10px;
@@ -25,7 +26,8 @@ body {
 }
 
 #bar-1-logo-div,
-#bar-2-logo-div {
+#bar-2-logo-div,
+#bar-3-logo-div {
   display: flex;
   align-items: center;
   padding-bottom: 10px;
@@ -42,7 +44,8 @@ body {
 }
 
 #bar-1-menu-div,
-#bar-2-menu-div {
+#bar-2-menu-div,
+#bar-3-menu-div {
   display: flex;
   flex-direction: column;
   gap: 3px;
@@ -51,7 +54,8 @@ body {
 }
 
 #bar-1-menu-div div,
-#bar-2-menu-div div {
+#bar-2-menu-div div,
+#bar-3-menu-div div {
   display: flex;
   align-items: center;
   padding: 10px 30px 10px 20px;
@@ -108,7 +112,8 @@ body {
   background-color: #f8f9fa;
 }
 
-#bar-2-logo-div {
+#bar-2-logo-div,
+#bar-3-logo-div {
   border-bottom: rgba(15, 13, 13, 0.3) solid 1px;
 }
 
@@ -140,4 +145,49 @@ body {
 
 #bar-2-profile-div p {
   color: #121213;
+}
+
+/* **************Third Sidebar******************** */
+
+#bar-3 {
+  background-color: #f8f9fa;
+  width: 5svw;
+  padding: 15px 0;
+}
+
+#bar-3-logo-div {
+  justify-content: center;
+}
+
+#bar-3-menu-div {
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  margin-top: 0px;
+  margin-bottom: 280px;
+}
+
+#bar-3-menu-div div {
+  align-items: center;
+  display: flex;
+  align-items: center;
+  padding: 13px 16px;
+  border-radius: 0px;
+  border-bottom: rgba(13, 109, 252, 0.3) solid 1px;
+  cursor: pointer;
+}
+
+#bar-3-menu-div iconify-icon {
+  color: #0d6efd;
+}
+
+#bar-3-menu-div iconify-icon:hover {
+  color: #3e8bff;
+  /* background-color: #0d6efd; */
+}
+
+#bar-3-menu-div-1 iconify-icon,
+#bar-3-menu-div-1 {
+  color: #f8f9fa;
+  background-color: #0d6efd;
 }
